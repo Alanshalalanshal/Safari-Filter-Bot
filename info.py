@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', "24064660"))
 API_HASH = environ.get('API_HASH', "d299cb7fbd24ae9848bf5867442c19e7")
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7851450080:AAEYOFRFazlPtfH_ZZthUm7V9ry_P0tB8dQ")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
