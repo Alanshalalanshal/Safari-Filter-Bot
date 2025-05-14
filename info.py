@@ -67,18 +67,18 @@ STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
 #verify site api and url
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), False)
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-VERIFY_URL = environ.get('VERIFY_URL', 'sharedisklinks.com')
-VERIFY_API = (environ.get('VERIFY_API', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+VERIFY_URL = environ.get('VERIFY_URL', 'https://arlinks.in')
+VERIFY_API = (environ.get('VERIFY_API', '35bf30df800f56ab40299cbd938bbad3afd70f29'))
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "600"))
-VERIFY_URL2 = environ.get('VERIFY_URL2', 'sharedisklinks.com')
-VERIFY_API2 = (environ.get('VERIFY_API2', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+VERIFY_URL2 = environ.get('VERIFY_URL2', 'https://arlinks.in')
+VERIFY_API2 = (environ.get('VERIFY_API2', '35bf30df800f56ab40299cbd938bbad3afd70f29'))
  
 THIRD_VERIFY_GAP = int(environ.get('THIRD_VERIFY_GAP', "600"))
-VERIFY_URL3 = environ.get('VERIFY_URL3', 'sharedisklinks.com')
-VERIFY_API3 = (environ.get('VERIFY_API3', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+VERIFY_URL3 = environ.get('VERIFY_URL3', 'https://arlinks.in')
+VERIFY_API3 = (environ.get('VERIFY_API3', '35bf30df800f56ab40299cbd938bbad3afd70f29'))
  
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shdjekkw')
 TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/hejejje')
@@ -132,7 +132,7 @@ SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'safaribotts'))
 MULTI_CLIENT = False
-name = str(environ.get('name', 'safaribotts'))
+name = str(environ.get('name', 'safaribots'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
