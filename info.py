@@ -1,5 +1,3 @@
-# This code has been modified by @Safaridev
-# Please do not remove this credit
 import re
 import os
 from os import environ, getenv
