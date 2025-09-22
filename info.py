@@ -18,15 +18,15 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ""))
-API_HASH = environ.get('API_HASH', "")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7121730083:IZywWw2UeuN-9ElCqIbm_II")
+API_ID = int(environ.get('API_ID', "21655839"))
+API_HASH = environ.get('API_HASH', "11e4ed5bca3d4fee1c00f298db8c6b59")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
-PICS = (environ.get('PICS', 'https://telegra.ph/file/0ed351c8605c23e8cae79.jpg https://telegra.ph/file/6524270c008b60f81f30a.jpg https://telegra.ph/file/848ed57090fd5111ce64d.jpg https://telegra.ph/file/5fe959d96fcc33d1b9dc9.jpg https://telegra.ph/file/ec5f5a031b7826e28360c.jpg https://telegra.ph/file/aa4b77441bb41cfce12d7.jpg https://telegra.ph/file/00ed60e2c89d564d850ef.jpg https://telegra.ph/file/a5d518f6020976bc45264.jpg https://telegra.ph/file/650191ad1f813ca8f41cb.jpg https://telegra.ph/file/c6042704a1bc0a2b52996.jpg https://telegra.ph/file/9d68211fa9dcb208200be.jpg')).split()
+PICS = (environ.get('PICS', '')).split()
 WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 
 #premium imag
@@ -37,7 +37,7 @@ QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/8bc2cc53e47180bc78c10.j
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "50")) # Set Referel point Count 
 #premium Users Satuts
-premium = environ.get('PREMIUM_LOGS', '-1001998895377')
+premium = environ.get('PREMIUM_LOGS', '-1002975734886')
 PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 # lock file, set file limit 
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 15))
@@ -45,9 +45,9 @@ SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 3))
 LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5069888600').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6732714410').split()]
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Safaridev") # widout 👉 @
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002101778109').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003012887561').split()]
 # post channel auto post new movie
 POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1001998895377').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
@@ -55,7 +55,7 @@ AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://J0.t0gdpgn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://alanshal9633:alanshal9633@alanshal.5i3l1tp.mongodb.net/?retryWrites=true&w=majority&appName=Alanshal")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Safaribotts')
 
@@ -91,11 +91,11 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/up')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Safaribotts')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MotuPatluRaceToDiamondValleychat')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MoviesIndia2025')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001433302422))
-GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1001998895377)) # Group verify stats 
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1003042011342))
+GROUP_VERIFY_LOGS = int(environ.get('GROUP_VERIFY_LOGS', -1003037650612)) # Group verify stats 
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', -1001998895377)) # movies request channel, else log channel
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Jhwjwp')
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
