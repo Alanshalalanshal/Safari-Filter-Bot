@@ -32,7 +32,7 @@ WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2d
 #premium imag
 REFFER_PIC = environ.get('REFFER_PIC', 'https://graph.org/file/f75feb19aece0d4badefd.jpg')
 PREMIUM_PIC = environ.get('SUBSCRIPTION', 'https://i.imghippo.com/files/wPdPK1726559453.jpg')
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/8bc2cc53e47180bc78c10.jpg') # Scanner Code image 
+QR_CODE = environ.get('QR_CODE', 'https://media-hosting.imagekit.io/5a1d38f6d589434a/WhatsApp%20Image%202025-05-03%20at%2015.18.26_9db6c694.jpg?Expires=1840873739&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=UKQkahbQbY89S26ZT2Y0Df2CbKSzXCvf1YViAhaam59Tz2qemilQKmmGGGoqCgRn8bGLmm2D7SP2ClbYpYc-FatkpXR7deE4B56RMH7xTvsWk7dsTQIjLXvRmyZCZOVGZedL60Qym6qivZImvN2pG2nk2-~plxcnHLsY27p5gbhp0aV3VdrNXw62YGzJb9LB6FTy-m2yhETn2Inj-FxeYATk4vyQe6rlhSthvKPpSqvIN9opczlBZmdWqLtamW4WBSqDK78lzF2EFthf7HISsYEMlOjZJOGB4UTlbyytGRQqqR~VdzzEA8X~Ow~7rhDnzvWDqX2pJqfQ2UarVNURuQ__') # Scanner Code image 
 #refer time, or feffer count
 REFERAL_TIME = int(environ.get('REFERAL_USER_TIME', "2592000")) # set in seconds | already seted 1 month premium
 REFFER_POINT = int(environ.get('USER_POINT', "50")) # Set Referel point Count 
