@@ -26,7 +26,7 @@ TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
-PICS = (environ.get('PICS', 'https://th.bing.com/th/id/R.9bf0470cbea90c844c635f40d84f3721?rik=bP%2fUizTRhIaOxg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-2YcnpB_0rjs%2fUFNEQkoF6SI%2fAAAAAAAAJoM%2ft9l0XjtvR9s%2fs0%2fnaruto-uzumaki-1920x1080-wallpaper.jpg&ehk=07gu0u7Y%2fkEbDk5qfjr%2fphBMAAsshHtPB3OF3pHGQr8%3d&risl=&pid=ImgRaw&r=0')).split()
+PICS = (environ.get('PICS', '')).split()
 WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 
 #premium imag
@@ -46,7 +46,7 @@ LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6732714410').split()]
-OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Alanshal") # widout 👉 @
+OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "") # widout 👉 @
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003012887561').split()]
 # post channel auto post new movie
 POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1001998895377').split(','))))
